@@ -1,0 +1,30 @@
+{
+  "name": "a11y-simulated-dialog-ng1",
+  "version": "1.0.0",
+  "description": "Demo of an accessible simulated dialog (modal) in Angular 1.X.",
+  "author": "Mat Janson Blanchet <mat.jb@jansensan.net> (http://jansensan.net)",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "git+https://jansensan@github.com/jansensan/a11y-simulated-dialog-ng1.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jansensan/a11y-simulated-dialog-ng1/issues"
+  },
+  "homepage": "https://github.com/jansensan/a11y-simulated-dialog-ng1#readme",
+  "dependencies": {
+    "angular": "^1.6.2",
+    "signals": "^1.0.0"
+  },
+  "devDependencies": {
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-angular-templatecache": "^2.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-watch": "^4.3.11",
+    "gulp-webserver": "^0.9.1",
+    "require-dir": "^0.3.1",
+    "run-sequence": "^1.2.2"
+  }
+}

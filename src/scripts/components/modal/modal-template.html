@@ -1,0 +1,41 @@
+<div
+  id="modal"
+  class="modal"
+  ng-class="{'hidden': vm.isHidden()}"
+  role="dialog"
+  tabindex="-1"
+  aria-hidden="true"
+  aria-labelledby="modalTitle"
+  aria-describedby="modalDesc"
+>
+  <div class="modal-section dark">
+    <div id="modalTitle" class="modal-title">Modal Header</div>
+  </div>
+
+  <div class="modal-section light">
+    <p id="modalDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ex ipsum, vestibulum eu mollis a, venenatis pretium.</p>
+  </div>
+
+  <div class="modal-section light">
+    <button
+      id="modalAcceptButton"
+      class="btn-primary"
+      type="button"
+      ng-click="vm.dismiss()"
+    >OK</button>
+    <button
+      id="modalCancelButton"
+      class="btn-primary cancel-btn"
+      type="button"
+      ng-click="vm.dismiss()"
+    >Cancel</button>
+  </div>
+
+  <button
+    id="modalCloseButton"
+    class="modal-close-btn btn-primary"
+    type="button"
+    aria-label="Close modal"
+    ng-click="vm.dismiss()"
+  >&times;</button>
+</div>
