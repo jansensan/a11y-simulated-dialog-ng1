@@ -22,6 +22,10 @@
   function Controller($document, $rootScope, ModalModel) {
     // vars
     var _element;
+    var _acceptButton;
+    var _cancelButton;
+    var _closeButton;
+
     var _firstElement;
     var _lastElement;
     var _activeElement;
@@ -38,8 +42,13 @@
     function activate() {
       // dom elements
       _element = document.getElementById('modal');
-      _firstElement = document.getElementById('modalCancelButton');
-      _lastElement = document.getElementById('modalCloseButton');
+      _cancelButton = document.getElementById('modalCancelButton');
+      _acceptButton = document.getElementById('modalAcceptButton');
+      _closeButton = document.getElementById('modalCloseButton');
+
+      _firstElement = _acceptButton;
+      _lastElement = _closeButton;
+
       _activeElement = null;
 
       // event/signals handlers
@@ -107,8 +116,8 @@
           event.preventDefault();
           event.stopPropagation();
           setFocus(_element);
-
-        } else if (_activeElement === _element) {
+        }
+        if (_activeElement === _element) {
           event.preventDefault();
           event.stopPropagation();
           setFocus(_lastElement);
